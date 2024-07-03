@@ -1,0 +1,82 @@
+/* Estilos para la sección Quiénes Somos */
+#quienes-somos {
+    margin-top: 90px;
+    padding: 8% 0 3%; 
+    background-color: #af7d00;
+    color: black;
+}
+
+
+#quienes-somos h2 {
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+#quienes-somos p {
+    font-size: 1.5rem; 
+    line-height: 1.6; /* Ajusta espacio entre líneas */
+    text-align: justify; /* texto justificado */
+    margin-bottom: 1rem; /*  espacio entre párrafos con rem */
+}
+
+.container-quienes {
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 2%; /* Ajustar padding con porcentaje */
+}
+
+.imagenes-personas {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se salten de línea en pantallas más pequeñas */
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding: 1%; 
+}
+.persona {
+    text-align: center;
+    width: calc(33% - 2%); /* Ajustar ancho con base en el número de columnas deseadas */
+    margin-bottom: 2%; /* Agregar espacio entre personas en la última fila */
+}
+
+.persona img {
+    width: 100%;
+    max-width: 12rem; /* Ajustar ancho máximo de imagen con rem */
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.persona h3 {
+    font-size: 2rem;
+}
+.link-hover {
+    color: #000000; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.link-hover:hover {
+    color: #a2ff00; /* Hover color (blue) */
+}
+
+.persona h4 {
+    padding-top: 0.5px;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 768px) {
+    .persona {
+        width: calc(50% - 2%); /* Ajustar ancho de persona en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .persona {
+        width: 100%; /* Persona ocupa todo el ancho en pantallas muy pequeñas */
+    }
+}

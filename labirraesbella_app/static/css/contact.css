@@ -1,0 +1,101 @@
+/* Sección Contacto */
+#formulario-contacto {
+    padding-top: 150px; /* Ajuste para evitar que el header tape el contenido */
+}
+
+.contenedor-general {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px;
+}
+
+.contenedor-formulario, .contenedor-mapa {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: #585858;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contenedor-formulario {
+    background-color: #585858;
+}
+
+.contenedor-mapa {
+    background-color: #b6b6b6;
+}
+
+.mapa-responsivo {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 3em;
+    color: #af7d00; /* Initial color */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: animateTitle 2s ease-in-out alternate infinite; /* Animation settings */
+}
+
+@keyframes animateTitle {
+    0% {
+      color: #ffffff; /* Start with initial color */
+      text-shadow: none; /* No shadow initially */
+}
+    50% {
+      color: #d7a438; /* Change color halfway through */
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+    100% {
+      color: #af7d00; /* Return to initial color at the end */
+      text-shadow: none; /* Remove shadow at the end */
+}
+}
+
+
+.titulo-seccion2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #af7d00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

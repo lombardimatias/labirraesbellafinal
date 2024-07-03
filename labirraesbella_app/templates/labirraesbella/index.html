@@ -1,0 +1,31 @@
+{% extends 'labirraesbella/base.html' %}
+{% block titulo %} La birra es bella {% endblock %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<section id="banner-cerveza">
+    <div class="info-banner">
+        <h2>Visita nuestro laboratorio de Cervezas<br>Descubrenos!</h2>
+        <form action="{% url 'nuestros_estilos' %}">
+            <button type="submit">Quiero más Info</button>
+        </form>
+    </div>
+
+{% endblock %}
+     
+
+
+{% block scripts %}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+
+
+
+
+
+    
+  

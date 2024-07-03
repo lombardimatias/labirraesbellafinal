@@ -1,0 +1,56 @@
+{% extends 'labirraesbella/base.html' %}
+{% block titulo %} Quiénes Somos - La Birra es Bella {% endblock %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<section id="quienes-somos">
+    <div class="container-quienes">
+        <h2>Quiénes somos</h2>
+        <p>En La Birra es Bella, nos enorgullece nuestra historia de pasión por la cerveza. Fundada en el corazón de la ciudad, nuestra cervecería ha crecido para convertirse en un referente en la escena cervecera local. Nuestro equipo está compuesto por apasionados cerveceros y entusiastas del buen sabor, comprometidos a ofrecer la mejor experiencia cervecera a nuestros clientes.</p>
+        <br>
+        <p>Nuestra misión es crear cervezas excepcionales que deleiten el paladar y fomenten momentos de disfrute y camaradería. Nos esforzamos por innovar y mejorar continuamente, manteniendo siempre los más altos estándares de calidad en cada etapa de nuestro proceso de producción.</p>
+        <!-- Imágenes de personas -->
+        <div class="imagenes-personas">
+            <div class="persona">
+                <img src= "{% static 'images/mati.jpg' %}" alt="Persona 1">
+               
+                <a href="https://www.linkedin.com/in/matias-lombardi-a237b818b/" target="_blank" class="link-hover">
+                <h3>Matias Lombardi</h3>
+            </a>
+                <h4>Chief Executive Office</h4>
+            </div>
+            <div class="persona">
+                <img src="{% static 'images/YesY.jpg' %}" alt="Persona 2"> 
+               
+                <a href="https://www.linkedin.com/in/dovisyesica/" target="_blank" class="link-hover">
+                <h3>Yesica L Dovis</h3>
+                </a>
+                <h4>Brewing and production</h4>
+</div>
+            <div class="persona">
+                <img src="{% static 'images/profe.jpg' %}"  alt="Persona 3">
+                
+                <a href="https://www.linkedin.com/in/tom%C3%A1s-k%C3%BCrten-p%C3%A9rez-588b7276/" target="_blank" class="link-hover">
+                <h3>Tomás kürten</h3>
+                </a>
+                <h4>Management and Direction</h4>
+            </div>
+        </div>
+    </div>
+</section>       
+
+
+{% endblock %}
+     
+
+
+
+{% block scripts %}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+
+

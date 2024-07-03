@@ -1,0 +1,56 @@
+{% extends 'labirraesbella/base.html' %}
+{% block titulo %} Contacto - La Birra es Bella {% endblock %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+<section id="formulario-contacto">
+    <h3 class="titulo-seccion">Contactanos!</h3>
+    <div class="contenedor-general">
+        <div class="contenedor-formulario">
+            <form id="contact-form">
+                <div class="datos">
+                    <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" class="input-mitad">
+                    <input type="email" id="email" placeholder="Email" class="input-mitad">            
+                </div>
+                <div class="consulta-usuario">
+                    <input type="text" id="tipo-consulta" placeholder="Tipo Consulta..." class="input-full">
+                </div>
+                <div class="checkboxes">
+                    <div class="checkbox">
+                        <input type="checkbox" id="soy-mayor">
+                        <label for="soy-mayor">Soy mayor</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="soy-menor">
+                        <label for="soy-menor">Soy menor</label>
+                    </div>
+                </div>
+                <div class="mensaje">
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Tu mensaje ..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="boton-enviar" id="enviar-btn">
+            </form>
+        </div>
+        <div class="contenedor-mapa">
+            <p class="titulo-seccion2">Donde estamos!</p>
+            <!-- Contenido del mapa de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.560252500462!2d-58.409777524325015!3d-34.640551459444225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0de996fa65%3A0x47296bd9e98ee2ad!2sUspallata%203150%2C%20C1437JCJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713921578348!5m2!1ses-419!2sar" class="mapa-responsivo"></iframe>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+
+
+{% block scripts %}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+

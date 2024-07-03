@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block titulo %}  {% endblock %} </title>
+    <link rel="icon" sizes="16x16" href="{% static 'images/icono.ico' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/banner.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+<body>
+    
+    
+    <header id="cabecera">
+        <a href="#" onclick="scrollToTop(); return false;">
+            <img class="logo" src="{% static 'images/logo.png' %}"  alt="Logo" style="transform: rotate(0deg);">
+        </a>
+        <div id="info-container">
+            <p id="fecha-hora"></p>
+            <p id="clima"></p>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'quienes_somos' %}">Quiénes somos</a></li>
+                <li><a href="{% url 'nuestros_estilos' %}">Nuestros Estilos</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+     
+
+    <main>
+
+        {% block content %}
+
+
+        {% endblock %}
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-title">DONDE ESTAMOS?</h2>
+                <p class="footer-direc">Uspallata 3150, C1437JCJ <br>Cdad. Autónoma de Buenos Aires.</p>
+            </div>
+    
+            <div class="footer-column">
+                <h2 class="footer-title">CONTACTANOS</h2>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="https://github.com/YesDovis" target="_blank" class="footer-social-link">
+                            <img src="{% static 'images/icons8-github-50.png' %}" alt="GITHUB">
+                            
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://github.com/lombardimatias" target="_blank" class="footer-social-link">
+                            <img src="{% static 'images/icons8-instagram-50.png' %}" alt="INSTAGRAM">
+                            
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://github.com/tomaskurten" target="_blank" class="footer-social-link">
+                            <img src="{% static 'images/icons8-facebook-50.png' %}" alt="FACEBOOK">
+                            
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" target="_blank"
+                            class="footer-social-link">
+                            <img src=  "{% static 'images/icons8-whatsapp-50.png' %}" alt="WHATSAPP">
+                          
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h2 class="footer-title">La birra es bella</h2>
+                <p class="footer-text">Cervezas hay para todos los gustos y para cualquier momento. Lager para un día
+                    caluroso o una buena Porter para la carne asada. Si no sabes qué escoger, te asesoramos. No dudes en
+                    consultarnos!!</p>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p class="footer-copyright-text">&copy; || 2024 || Equipo 17 PYTHON-FRONTEND || 24188 ||.</p>
+        </div>
+      
+    </footer>
+    
+
+
+</body>
+
+{% block scripts %}
+
+{% endblock %}
+
+
+</html>

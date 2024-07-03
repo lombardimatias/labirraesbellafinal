@@ -1,0 +1,31 @@
+/* Banner de Inicio */
+#banner-cerveza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/pupurrybeer.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 10px;
+}
+
+#banner-cerveza h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #banner-cerveza {
+        min-height: 50vh;
+        padding: 80px 0;
+    }
+
+    #banner-cerveza h2 {
+        font-size: 2em;
+    }
+}
