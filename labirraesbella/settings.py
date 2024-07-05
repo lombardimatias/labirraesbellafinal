@@ -124,5 +124,5 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Configuración para subir imágenes a la carpeta imágenes
-MEDIARO_ROOT = os.path.join(BASE_DIR, '')
+MEDIARO_ROOT = os.path.join(BASE_DIR, 'imagenes')
 MEDIA_URL = '/imagenes/'
