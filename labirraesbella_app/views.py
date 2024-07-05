@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from .models import Cerveza
 
 # Create your views here.
 
@@ -11,7 +12,8 @@ def base(request):
 
 
 def nuestros_estilos(request):
-    return render(request, 'labirraesbella/nuestros_estilos.html')
+    cerveza = Cerveza.objects.all()
+    return render(request, 'labirraesbella/nuestros_estilos.html',{'cervezas': cerveza})
 
 def quienes_somos(request):
     return render(request, 'labirraesbella/quienes_somos.html')
